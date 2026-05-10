@@ -1,0 +1,1767 @@
+{
+  "generatedAt": "2026-05-10",
+  "project": "AgentRoster Blueprint",
+  "description": "Seed data for the internal AgentRoster Blueprint product map.",
+  "statusEnum": [
+    "Idea",
+    "Spec Needed",
+    "Spec Ready",
+    "Design Needed",
+    "Design In Progress",
+    "Wireframe Ready",
+    "Prototype Ready",
+    "Dev Ready",
+    "In Development",
+    "QA",
+    "Launch Ready",
+    "Shipped",
+    "Post-Launch Iteration",
+    "Blocked"
+  ],
+  "spaces": [
+    {
+      "id": "public-site",
+      "name": "Homepage / Public Site",
+      "slug": "homepage-public-site",
+      "type": "Public acquisition",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Explain AgentRoster simply and route visitors into the right wedge: individual, business, service provider, tool/company partner, or audit.",
+      "promise": "Keep your stack. Add the Brain.",
+      "primaryUsers": [
+        "Logged-out visitor",
+        "Individual prospect",
+        "Business prospect",
+        "Service provider prospect",
+        "Tool/company partner prospect"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Hero story",
+        "Persona paths",
+        "Product proof sections",
+        "Audit CTA",
+        "Pricing CTA",
+        "Video/visual explainer"
+      ],
+      "pages": [
+        "Logged-out Homepage",
+        "AI Work Graph Audit Landing Page",
+        "Use Case Pages",
+        "Video Explainer Page",
+        "Pricing CTA Strip"
+      ],
+      "dataSources": [
+        "Marketing copy",
+        "Product space definitions",
+        "Pricing model",
+        "Sample report screenshots",
+        "Directory/category seed data"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/public-site",
+      "notes": "Needs design; copy ready"
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing / Packaging",
+      "slug": "pricing-packaging",
+      "type": "Commercial",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Show the two individual plans, two business plans, one service provider plan, and Advanced coming soon without revealing too much.",
+      "promise": "Start useful. Upgrade when you are ready to connect your world.",
+      "primaryUsers": [
+        "Individual prospect",
+        "Business buyer",
+        "Service provider",
+        "Tool/company partner"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Individual tab",
+        "Business tab",
+        "Service Provider tab",
+        "Coming soon advanced",
+        "Feature comparison",
+        "FAQ"
+      ],
+      "pages": [
+        "Pricing Home",
+        "Individual Pricing",
+        "Business Pricing",
+        "Service Provider Pricing",
+        "Plan Comparison",
+        "Billing FAQ"
+      ],
+      "dataSources": [
+        "Plan catalog",
+        "Feature gates",
+        "Billing rules",
+        "Launch copy"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/pricing",
+      "notes": "Needs final prices for Individual/Business/client workspace; Service Provider $179 direction set"
+    },
+    {
+      "id": "quick-start",
+      "name": "Onboarding / Quick Start",
+      "slug": "onboarding-quick-start",
+      "type": "Core app",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Beat the cold start by collecting role, industry, goals, tools, team/company context, and optional email/tool connections.",
+      "promise": "Give Scout enough context to make AgentRoster useful immediately.",
+      "primaryUsers": [
+        "Individual Plan 1",
+        "Individual Plan 2",
+        "Business users",
+        "Service provider clients"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Step wizard",
+        "Tool picker",
+        "Goal picker",
+        "Email connect prompt",
+        "Review screen"
+      ],
+      "pages": [
+        "Quick Start",
+        "Tool Declaration",
+        "Email/Calendar Connect Prompt",
+        "Initial Goals",
+        "Start Brain Snapshot"
+      ],
+      "dataSources": [
+        "User input",
+        "Tool directory",
+        "Role taxonomy",
+        "Industry taxonomy",
+        "Plan access"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/quick-start",
+      "notes": "Launch P0"
+    },
+    {
+      "id": "brain-build",
+      "name": "Brain Build / Scout Interview",
+      "slug": "brain-build-scout-interview",
+      "type": "Core app",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Let users talk or type through their work, tools, clients, projects, skills, costs, and goals; turn it into structured operating graph context.",
+      "promise": "Turn one conversation into your personal or company operating graph.",
+      "primaryUsers": [
+        "Individual Plan 2",
+        "Business Plan 2",
+        "Service provider client workspaces",
+        "Advanced coming soon"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Voice interview",
+        "Typed interview",
+        "Guided prompt mode",
+        "Freeform ramble mode",
+        "Transcript view",
+        "Live extraction panel"
+      ],
+      "pages": [
+        "Brain Build Home",
+        "Scout Interview Session",
+        "Prompt Library",
+        "Transcript Review",
+        "Extracted Context Review"
+      ],
+      "dataSources": [
+        "Voice transcription",
+        "User typed answers",
+        "Prompt library",
+        "Existing profile context",
+        "Directory/tool data"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/brain-build",
+      "notes": "Launch P0 with lightweight version; richer voice later"
+    },
+    {
+      "id": "what-we-heard",
+      "name": "This Is What We Heard",
+      "slug": "this-is-what-we-heard",
+      "type": "Trust/confirmation",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Show users what Scout understood, what is confirmed, inferred, missing, rejected, or stale before updating Brain state.",
+      "promise": "Nothing important enters your Brain without context, source, and review.",
+      "primaryUsers": [
+        "All logged-in users",
+        "Business reviewers",
+        "Service provider clients"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Confirmed",
+        "Inferred",
+        "Missing",
+        "Rejected",
+        "Needs review",
+        "Source drawer"
+      ],
+      "pages": [
+        "What We Heard Review",
+        "Confirm Inferred Items",
+        "Resolve Missing Context",
+        "Rejected Items",
+        "Source Review"
+      ],
+      "dataSources": [
+        "Scout Interview",
+        "Quick Start",
+        "Email detection",
+        "Connected tools",
+        "Manual confirmations"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/what-we-heard",
+      "notes": "Launch P0"
+    },
+    {
+      "id": "brain-snapshot",
+      "name": "Brain Snapshot / Reports",
+      "slug": "brain-snapshot-reports",
+      "type": "Core output",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Give users the first visual summary of what AgentRoster understands about their people, agents, tools, skills, work, costs, gaps, and next actions.",
+      "promise": "See your starting operating picture in one place.",
+      "primaryUsers": [
+        "Individual users",
+        "Business users",
+        "Service provider clients"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Overview",
+        "Tools",
+        "People",
+        "Agents",
+        "Skills",
+        "Costs",
+        "Gaps",
+        "Risks",
+        "Next actions",
+        "Export/report"
+      ],
+      "pages": [
+        "Brain Snapshot Home",
+        "Personal Snapshot",
+        "Company Snapshot",
+        "Exportable Snapshot Report",
+        "Snapshot History"
+      ],
+      "dataSources": [
+        "Brain state",
+        "Confirmed/inferred data",
+        "Tool directory",
+        "Cost lens",
+        "Recommendation engine"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/brain-snapshot",
+      "notes": "Launch P0"
+    },
+    {
+      "id": "feed-scout",
+      "name": "Feed / Scout Brief",
+      "slug": "feed-scout-brief",
+      "type": "Core app",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Deliver personalized awareness and intelligence based on role, industry, stack, goals, and saved/watched items.",
+      "promise": "Scout shows what changed, why it matters, and what you should do next.",
+      "primaryUsers": [
+        "All logged-in users"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "My Feed",
+        "Scout Brief",
+        "Stack Watch feed",
+        "Category feed",
+        "Saved/Watch actions"
+      ],
+      "pages": [
+        "My Feed",
+        "Scout Brief",
+        "Card Detail",
+        "Stack Watch Feed",
+        "Saved Feed Items"
+      ],
+      "dataSources": [
+        "AI economy signals",
+        "Directory updates",
+        "Stack graph",
+        "User profile",
+        "Tool watchlist",
+        "Jobs/skills data"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/feed-scout",
+      "notes": "Launch P0"
+    },
+    {
+      "id": "scout-inbox",
+      "name": "Scout Inbox / Brain Backlog",
+      "slug": "scout-inbox-brain-backlog",
+      "type": "Core app",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Turn missing context, confirmations, recommendations, approvals, and profile-building questions into an ongoing queue.",
+      "promise": "Scout keeps asking the right small questions so your Brain gets smarter over time.",
+      "primaryUsers": [
+        "Individual Plan 1+",
+        "Business Plan 1+",
+        "Service providers",
+        "Tool partners via Atlas equivalent"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Context gaps",
+        "Confirmations",
+        "Recommendations",
+        "Approvals",
+        "Completed",
+        "Deferred"
+      ],
+      "pages": [
+        "Scout Inbox Home",
+        "Context Gap Detail",
+        "Recommendation Detail",
+        "Approval Detail",
+        "Completed Checks"
+      ],
+      "dataSources": [
+        "Brain gaps",
+        "Feed actions",
+        "Quick Start",
+        "Brain Build",
+        "Connected tool signals",
+        "Recommendation rules"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/scout-inbox",
+      "notes": "Launch P0/P1"
+    },
+    {
+      "id": "brain-connect",
+      "name": "Brain Connect",
+      "slug": "brain-connect",
+      "type": "Plan 2 unlock",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "A visual command center for connected, detected, mentioned, unknown, and suggested tools/categories powering the user/company AI Work Graph.",
+      "promise": "Connect the tools you already use and see what AgentRoster knows, what is missing, and what should happen next.",
+      "primaryUsers": [
+        "Individual Plan 2",
+        "Business Plan 2",
+        "Service provider client workspaces"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Ecosystem overview",
+        "Connected tools",
+        "Detected tools",
+        "Mentioned tools",
+        "Unknown categories",
+        "Suggested tools",
+        "Graph health",
+        "Connection detail"
+      ],
+      "pages": [
+        "Brain Connect Home",
+        "Connected Tools",
+        "Detected Tools",
+        "Mentioned Tools",
+        "Unknown Categories",
+        "Suggested Tools",
+        "Connection Detail",
+        "Graph Health / Context Gaps"
+      ],
+      "dataSources": [
+        "OAuth/API/MCP connections",
+        "Email/calendar signals",
+        "Quick Start",
+        "Scout Interview",
+        "Directory metadata",
+        "Pricing data",
+        "User confirmations"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/brain-connect",
+      "notes": "Plan 2 wow unlock"
+    },
+    {
+      "id": "arm",
+      "name": "ARM / AgentRoster Management",
+      "slug": "arm-agentroster-management",
+      "type": "Core operating space",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "CRM-style operating views for managing the user/company ecosystem: people, agents, tools, skills, work, costs, access, and decisions.",
+      "promise": "Manage your AgentRoster ecosystem in familiar list, board, graph, and profile views.",
+      "primaryUsers": [
+        "Individual Plan 2",
+        "Business Plan 2",
+        "Service providers",
+        "Admins"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "List",
+        "Board",
+        "Org/graph",
+        "Profile detail",
+        "Timeline",
+        "Cost view",
+        "Access view"
+      ],
+      "pages": [
+        "ARM Home",
+        "People View",
+        "Agents View",
+        "Tools View",
+        "Skills View",
+        "Work View",
+        "Customers/Companies View",
+        "Access View",
+        "Cost View",
+        "Decisions View"
+      ],
+      "dataSources": [
+        "Brain state",
+        "Stack graph",
+        "Directory",
+        "Connected tools",
+        "Cost ledger",
+        "Manual notes",
+        "Scout actions"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/arm",
+      "notes": "Launch P0 with static/mocked layouts; deeper graph later"
+    },
+    {
+      "id": "directory",
+      "name": "Directory / Ecosystem",
+      "slug": "directory-ecosystem",
+      "type": "Public + logged-in",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Map the AI economy: tools, agents, companies, categories, comparisons, providers, jobs, and skills.",
+      "promise": "Find what matters in the AI economy and understand where it fits.",
+      "primaryUsers": [
+        "Logged-out visitors",
+        "Logged-in users",
+        "Tool companies",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Directory home",
+        "Category pages",
+        "Profile pages",
+        "Comparison pages",
+        "Brain Ready directory",
+        "Trending/new/verified"
+      ],
+      "pages": [
+        "Directory Home",
+        "Tool Profiles",
+        "Agent Profiles",
+        "Company Profiles",
+        "Category Pages",
+        "Comparison Pages",
+        "Brain Ready Directory",
+        "Claim Profile CTA"
+      ],
+      "dataSources": [
+        "Public ecosystem data",
+        "Atlas submissions",
+        "Claimed profiles",
+        "AI economy signals",
+        "Skills data",
+        "Jobs data"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/directory",
+      "notes": "Launch P0"
+    },
+    {
+      "id": "skills",
+      "name": "Skills Space",
+      "slug": "skills-space",
+      "type": "Public + logged-in",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Create the AI-era skills layer across tools, roles, workflows, companies, agents, service providers, and people.",
+      "promise": "Find, save, learn, publish, and later prove the skills needed for AI-era work.",
+      "primaryUsers": [
+        "Individuals",
+        "Job seekers",
+        "Service providers",
+        "Tool companies",
+        "Businesses"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Official skills",
+        "Tool skills",
+        "Role skills",
+        "Beginner/advanced",
+        "Incomplete skills",
+        "Saved skills",
+        "Provider-published skills"
+      ],
+      "pages": [
+        "Skills Home",
+        "Official Skills Library",
+        "Tool Skill Pages",
+        "Role Skill Pages",
+        "Skill Detail Page",
+        "Incomplete Skills Queue",
+        "Provider Skill Publishing",
+        "User Skill Map",
+        "Company Skill Map"
+      ],
+      "dataSources": [
+        "Official company resources",
+        "Tool docs",
+        "Atlas submissions",
+        "Provider submissions",
+        "User saved/proven skills",
+        "Jobs skill demand"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/skills",
+      "notes": "Launch v1 with official/verifiable company-owned skills"
+    },
+    {
+      "id": "service-provider",
+      "name": "Service Provider Network",
+      "slug": "service-provider-network",
+      "type": "Revenue + ecosystem",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Give AI consultants/agencies/trainers/enablement firms a credibility profile, client audit toolkit, skills/how-to publishing, and discovery surface.",
+      "promise": "Show your AI work, run client audits, publish skills, and become discoverable to people and companies that need help.",
+      "primaryUsers": [
+        "Service providers",
+        "Agencies",
+        "Consultants",
+        "AI enablement firms",
+        "Trainers",
+        "Companies looking for help"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Provider directory",
+        "Public profile",
+        "Provider dashboard",
+        "Client workspaces",
+        "Audit kit",
+        "Skills/how-tos",
+        "Billing"
+      ],
+      "pages": [
+        "Service Provider Directory",
+        "Service Provider Profile",
+        "Provider Dashboard",
+        "Client Workspaces",
+        "AI Work Graph Audit Kit",
+        "Provider Skills / How-Tos",
+        "Provider Credibility Timeline",
+        "Provider Billing",
+        "White Label / Branding (later)"
+      ],
+      "dataSources": [
+        "Provider profile",
+        "Atlas/Profile Build",
+        "Client workspace data",
+        "Published skills",
+        "Case studies",
+        "Saves/follows/reactions",
+        "Audit reports"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/service-provider",
+      "notes": "Launch with $179/mo plan direction; client workspace price TBD"
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas Profile Build / Compatibility Network",
+      "slug": "atlas-profile-build-compatibility-network",
+      "type": "Partner/tool/company side",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Atlas maps the ecosystem by helping tools, agents, SaaS companies, service providers, and partners complete rich profiles and become discoverable/Brain Ready.",
+      "promise": "Help AgentRoster understand where your product fits so users can discover it when it matches their goals, workflows, roles, skills, and stack gaps.",
+      "primaryUsers": [
+        "Tool companies",
+        "Agent companies",
+        "SaaS companies",
+        "Service providers",
+        "AgentRoster admins"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Claim profile",
+        "Atlas interview",
+        "Profile dashboard",
+        "Brain Ready setup",
+        "Skill contribution",
+        "Changelog/update intake",
+        "Analytics later"
+      ],
+      "pages": [
+        "Claim Profile",
+        "Atlas Interview",
+        "Company/Tool Dashboard",
+        "Brain Ready Setup",
+        "Sandbox Ready Setup (later)",
+        "Skill Contribution Space",
+        "Update / Changelog Intake",
+        "Analytics / Insights"
+      ],
+      "dataSources": [
+        "Company submissions",
+        "Official docs",
+        "Public profile data",
+        "Directory crawler/manual data",
+        "Integration metadata",
+        "Skills data"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/atlas",
+      "notes": "Launch with claim/profile build; deeper analytics later"
+    },
+    {
+      "id": "ai-work-graph-audit",
+      "name": "AI Work Graph Audit",
+      "slug": "ai-work-graph-audit",
+      "type": "Acquisition + report",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Self-serve or provider-led audit that maps what exists, what is missing, what is risky, what it costs, and what should happen next.",
+      "promise": "Run your AI Work Graph Audit and see the pieces on the table before making AI decisions.",
+      "primaryUsers": [
+        "Individuals",
+        "Businesses",
+        "Service providers",
+        "Consultants",
+        "Department leaders"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Lite audit",
+        "Full audit",
+        "Company audit rollout",
+        "Provider client audit",
+        "Report view",
+        "Export"
+      ],
+      "pages": [
+        "Audit Landing Page",
+        "Audit Intake",
+        "Audit Results",
+        "Audit Report",
+        "Company Rollout",
+        "Provider Audit Kit",
+        "Audit History"
+      ],
+      "dataSources": [
+        "Quick Start",
+        "Scout Interview",
+        "Email/tool detection",
+        "Connected tools",
+        "Directory",
+        "Skills",
+        "Costs",
+        "Recommendations"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/ai-work-graph-audit",
+      "notes": "Launch wedge; Lite free/included; full tied to Plan 2/provider"
+    },
+    {
+      "id": "business-brain",
+      "name": "Business Brain",
+      "slug": "business-brain",
+      "type": "Business Plan 2",
+      "phase": "Launch P1",
+      "priority": "P1",
+      "owner": "TBD",
+      "purpose": "Company/team operating graph across people, agents, tools, work, skills, costs, access, risks, and decisions.",
+      "promise": "Give teams the clearest operating picture of their human + agent stack.",
+      "primaryUsers": [
+        "Business admins",
+        "Department leaders",
+        "Ops",
+        "IT/security",
+        "Finance",
+        "Legal/compliance",
+        "HR/learning"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Company overview",
+        "Teams/departments",
+        "People",
+        "Agents",
+        "Tools",
+        "Skills",
+        "Costs",
+        "Access/risk",
+        "Recommendations",
+        "Reports"
+      ],
+      "pages": [
+        "Company Brain Home",
+        "Team / Department Views",
+        "Company Scout Inbox",
+        "Company AI Work Graph Audit",
+        "Employee Scout Interview Rollout",
+        "Access / Risk Map",
+        "Cost / Ledger Map",
+        "Recommendations",
+        "Reports"
+      ],
+      "dataSources": [
+        "Team member interviews",
+        "Connected CRM/PM/Slack/docs",
+        "Admin input",
+        "Cost data",
+        "Brain state",
+        "Audit results"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Needed",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/business-brain",
+      "notes": "Business Plan 2; v1 scope should be realistic"
+    },
+    {
+      "id": "cost-ledger",
+      "name": "Cost / Ledger Layer",
+      "slug": "cost-ledger-layer",
+      "type": "Cross-cutting lens",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Track software/AI stack costs, plans, seats, renewals, owners, overlaps, and later token/API/usage spend.",
+      "promise": "See what your AI operating stack costs and what value it supports.",
+      "primaryUsers": [
+        "Individuals",
+        "Finance",
+        "Ops",
+        "Business admins",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Cost overview",
+        "Subscription tracker",
+        "Cost by tool",
+        "Cost by person/team",
+        "Renewals",
+        "Unknown costs",
+        "API/token later"
+      ],
+      "pages": [
+        "Cost Overview",
+        "Subscription Tracker",
+        "Cost by Tool",
+        "Cost by Person / Team",
+        "Cost by Workflow (later)",
+        "API / Token Spend (later)",
+        "Finance Connections (later)",
+        "Cost Gaps"
+      ],
+      "dataSources": [
+        "Manual price input",
+        "Public pricing data",
+        "Email receipts/invoices",
+        "Connected finance tools later",
+        "Tool metadata",
+        "User confirmations"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/cost-ledger",
+      "notes": "Launch v1 basic; deeper finance later"
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance / Audit Log",
+      "slug": "provenance-audit-log",
+      "type": "Trust infrastructure",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Show where every claim came from, when it was learned, how confident AgentRoster is, and when it was last audited.",
+      "promise": "Trust the Brain because every important claim has source, date, confidence, and review status.",
+      "primaryUsers": [
+        "All users",
+        "Admins",
+        "Compliance/legal/security",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Source drawer",
+        "Brain audit log",
+        "Confidence view",
+        "Last audited status",
+        "Transcript reference",
+        "Review queue"
+      ],
+      "pages": [
+        "Source Drawer",
+        "Brain Audit Log",
+        "Confidence View",
+        "Last Audited Status",
+        "Transcript Reference",
+        "Review Queue"
+      ],
+      "dataSources": [
+        "All capture sources",
+        "Brain Build transcript",
+        "Email detection",
+        "Connected tools",
+        "User confirmations",
+        "Public sources"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/provenance",
+      "notes": "Launch P0 as simple source/confidence pattern"
+    },
+    {
+      "id": "integrations",
+      "name": "Integrations / Brain Ready",
+      "slug": "integrations-brain-ready",
+      "type": "Infrastructure + partner",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Track integration categories, native depth, middleware paths, MCP/API readiness, and Brain Ready status.",
+      "promise": "Broad compatibility, deeper native mapping where graph value is highest.",
+      "primaryUsers": [
+        "Internal team",
+        "Tool partners",
+        "Business admins",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Category coverage",
+        "Native integrations",
+        "Middleware/MCP/API coverage",
+        "Brain Ready partners",
+        "Integration health",
+        "Roadmap"
+      ],
+      "pages": [
+        "Integrations Home",
+        "Integration Category Matrix",
+        "Native Integration Detail",
+        "Middleware Coverage",
+        "Brain Ready Directory",
+        "Integration Health",
+        "Partner Roadmap"
+      ],
+      "dataSources": [
+        "Integration metadata",
+        "Partner submissions",
+        "Engineering status",
+        "MCP/API docs",
+        "Directory profiles"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/integrations",
+      "notes": "Blueprint must map now; product v1 selectively"
+    },
+    {
+      "id": "decision-sandbox",
+      "name": "Decision Sandbox",
+      "slug": "decision-sandbox",
+      "type": "Advanced / coming soon",
+      "phase": "Coming soon",
+      "priority": "P2",
+      "owner": "TBD",
+      "purpose": "Scenario testing layer for agent access, workflow changes, automation, approvals, cost/risk, and human/agent/tool decisions before they go live.",
+      "promise": "Test decisions before agents act.",
+      "primaryUsers": [
+        "Advanced individuals",
+        "Business admins",
+        "IT/security",
+        "Ops",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Scenario builder",
+        "Access impact",
+        "Risk/cost projection",
+        "Recommended guardrails",
+        "A/B operations tests",
+        "Approval plan"
+      ],
+      "pages": [
+        "Decision Sandbox Landing",
+        "Scenario Builder",
+        "Agent Access Scenario",
+        "Workflow Simulation",
+        "Risk/Cost Projection",
+        "Approval Plan",
+        "Sandbox Results"
+      ],
+      "dataSources": [
+        "Brain state",
+        "Access map",
+        "Cost lens",
+        "Workflow data",
+        "Connected tool metadata",
+        "Policy/rules"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Needed",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/decision-sandbox",
+      "notes": "Show coming soon; do not overbuild launch"
+    },
+    {
+      "id": "jobs-talent",
+      "name": "Jobs / Talent Layer",
+      "slug": "jobs-talent-layer",
+      "type": "Public + logged-in",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Use AI job postings as a data source for hiring demand, tool adoption, skill requirements, company AI activity, and user opportunity.",
+      "promise": "Understand which jobs, skills, tools, and companies matter in the AI economy.",
+      "primaryUsers": [
+        "Job seekers",
+        "Students",
+        "Companies",
+        "Employers",
+        "Service providers",
+        "Analysts"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Job board",
+        "Job detail",
+        "Skill gap",
+        "Company hiring profile",
+        "Saved jobs",
+        "Match later"
+      ],
+      "pages": [
+        "Jobs Home",
+        "Job Detail",
+        "Company Hiring Pages",
+        "Saved Jobs",
+        "Skill Demand Map",
+        "Employer Profile",
+        "Candidate Readiness"
+      ],
+      "dataSources": [
+        "Job postings",
+        "Company profiles",
+        "Skills taxonomy",
+        "Tool mentions",
+        "User profile",
+        "Work Portfolio"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/jobs-talent",
+      "notes": "Source Pack launch surface; Blueprint should map"
+    },
+    {
+      "id": "answers",
+      "name": "Answers / Public Q&A",
+      "slug": "answers-public-q-a",
+      "type": "SEO/AEO + onboarding",
+      "phase": "Launch P0/P1",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Public, sourced, indexable Q&A layer for AI tools, agents, workflows, skills, costs, careers, and business use cases.",
+      "promise": "Answer the questions people already ask about the AI economy, then route them into Scout, Brain, Stack, Jobs, Skills, and Directory.",
+      "primaryUsers": [
+        "Logged-out visitors",
+        "Logged-in users",
+        "Search users",
+        "Novices"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Answer page",
+        "Related tools",
+        "Related skills",
+        "Related jobs",
+        "Ask Scout follow-up",
+        "Save to Brain"
+      ],
+      "pages": [
+        "Answers Home",
+        "Answer Detail",
+        "Topic Hubs",
+        "Related Questions",
+        "Ask Scout Follow-up",
+        "Save/Convert CTA"
+      ],
+      "dataSources": [
+        "Question taxonomy",
+        "Directory",
+        "Tools/skills/jobs data",
+        "Scout answer generation",
+        "Sources"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/answers",
+      "notes": "Blueprint should map"
+    },
+    {
+      "id": "work-portfolio",
+      "name": "Work Portfolio",
+      "slug": "work-portfolio",
+      "type": "Capability proof",
+      "phase": "P1/P2",
+      "priority": "P1",
+      "owner": "TBD",
+      "purpose": "Let users prove AI-era capability through projects, skills, outputs, reports, and artifacts.",
+      "promise": "Show what you can do, not just what tools you know.",
+      "primaryUsers": [
+        "Students",
+        "Job seekers",
+        "VAs/BPO workers",
+        "Consultants",
+        "Creators",
+        "Employees"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Portfolio home",
+        "Project outputs",
+        "Skill proof",
+        "Reports/artifacts",
+        "Public share"
+      ],
+      "pages": [
+        "Work Portfolio Home",
+        "Project Detail",
+        "Skill Proof Detail",
+        "Artifact Library",
+        "Public Portfolio"
+      ],
+      "dataSources": [
+        "Completed skills",
+        "Project courses",
+        "Saved Brain artifacts",
+        "Reports",
+        "User submissions"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Needed",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/work-portfolio",
+      "notes": "Future but important"
+    },
+    {
+      "id": "communities",
+      "name": "Communities / Topic Hubs",
+      "slug": "communities-topic-hubs",
+      "type": "Public + logged-in",
+      "phase": "P1/P2",
+      "priority": "P1",
+      "owner": "TBD",
+      "purpose": "Agent-led topic hubs for roles, industries, and AI use cases before empty forums.",
+      "promise": "Find the questions, tools, skills, jobs, and briefings relevant to your AI community.",
+      "primaryUsers": [
+        "Students",
+        "VAs",
+        "Marketing agencies",
+        "Local government",
+        "SMBs",
+        "Industry groups"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Hub home",
+        "Top questions",
+        "Starter stack",
+        "Job signals",
+        "Tool rankings",
+        "Weekly Scout brief"
+      ],
+      "pages": [
+        "Communities Home",
+        "Topic Hub",
+        "Hub Feed",
+        "Hub Skills",
+        "Hub Jobs",
+        "Hub Starter Stack"
+      ],
+      "dataSources": [
+        "Answers",
+        "Directory",
+        "Jobs",
+        "Skills",
+        "Feed signals",
+        "Community reactions"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Needed",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/communities",
+      "notes": "Future"
+    },
+    {
+      "id": "real-world-services",
+      "name": "Real-World Services / Workshops",
+      "slug": "real-world-services-workshops",
+      "type": "Revenue + distribution",
+      "phase": "P1/P2",
+      "priority": "P1",
+      "owner": "TBD",
+      "purpose": "Support workshops, readiness sessions, cohorts, enterprise audits, city/university programs, and training tied to AgentRoster data.",
+      "promise": "Bring AgentRoster\u2019s AI Work Graph into real-world training, audits, and enablement.",
+      "primaryUsers": [
+        "Companies",
+        "Universities",
+        "Governments",
+        "Workforce programs",
+        "Service providers"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Workshop offerings",
+        "Cohorts",
+        "Program reports",
+        "Readiness dashboards",
+        "Provider-led programs"
+      ],
+      "pages": [
+        "Services Home",
+        "Workshop Detail",
+        "Cohort Detail",
+        "Program Report",
+        "Partner Program"
+      ],
+      "dataSources": [
+        "Audit data",
+        "Skills",
+        "Work Portfolio",
+        "Service provider network",
+        "Reports"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Needed",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/real-world-services",
+      "notes": "Future but strategic"
+    },
+    {
+      "id": "admin-ops",
+      "name": "Admin / Internal Ops",
+      "slug": "admin-internal-ops",
+      "type": "Internal",
+      "phase": "Launch P0",
+      "priority": "P0",
+      "owner": "TBD",
+      "purpose": "Give AgentRoster operators internal control over content, profiles, page records, data quality, launch status, and moderation.",
+      "promise": "Keep the ecosystem clean, sourced, and buildable.",
+      "primaryUsers": [
+        "AgentRoster admins",
+        "Product team",
+        "Data team",
+        "Ops"
+      ],
+      "planAccess": [
+        "internal"
+      ],
+      "views": [
+        "Content queue",
+        "Profile claims",
+        "Data quality",
+        "Moderation",
+        "Status dashboard",
+        "Audit logs"
+      ],
+      "pages": [
+        "Admin Home",
+        "Profile Claim Review",
+        "Data Quality Queue",
+        "Content Queue",
+        "Moderation Queue",
+        "Internal Audit Logs",
+        "Feature Flags"
+      ],
+      "dataSources": [
+        "All internal records",
+        "Atlas submissions",
+        "User submissions",
+        "Public data",
+        "Admin actions"
+      ],
+      "relatedObjects": [],
+      "components": [
+        "ProductSpaceCard",
+        "ProductPageCard",
+        "StatusBadge",
+        "DesignAssetSlot",
+        "DataSourceBadge"
+      ],
+      "dependencies": [],
+      "designStatus": "Design Needed",
+      "devStatus": "Spec Ready",
+      "dataStatus": "Spec Ready",
+      "marketingStatus": "Spec Ready",
+      "launchStatus": "Spec Ready",
+      "openQuestions": [],
+      "route": "/blueprint/spaces/admin-ops",
+      "notes": "Blueprint v0 should include internal admin view"
+    }
+  ],
+  "marketingClaims": [
+    {
+      "id": "claim-keep-stack",
+      "claim": "Keep your stack. Add the Brain.",
+      "proofSurfaces": [
+        "Brain Connect",
+        "ARM",
+        "Brain Snapshot",
+        "Brain Build",
+        "Scout Inbox"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-dots",
+      "claim": "The dots were always there. AgentRoster connects them.",
+      "proofSurfaces": [
+        "Homepage visual",
+        "AI Work Graph Audit",
+        "ARM graph view",
+        "Brain Snapshot"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-operating-graph",
+      "claim": "AgentRoster connects your people, agents, tools, skills, work, costs, access, and decisions into one operating graph.",
+      "proofSurfaces": [
+        "Brain Connect",
+        "Business Brain",
+        "ARM",
+        "Cost/Ledger",
+        "Provenance"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-one-conversation",
+      "claim": "Brain Build turns one conversation into your personal or company operating graph.",
+      "proofSurfaces": [
+        "Brain Build",
+        "This Is What We Heard",
+        "Brain Snapshot",
+        "Scout Inbox"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-work-graph-audit",
+      "claim": "Run your AI Work Graph Audit. See what you have, what is missing, what is risky, what it costs, and what should happen next.",
+      "proofSurfaces": [
+        "Audit Landing Page",
+        "Audit Intake",
+        "Audit Results",
+        "Provider Audit Kit"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-brain-ready",
+      "claim": "Become AgentRoster Brain Ready so customers can understand where your tool fits, which agents can use it, and how it connects to their AI Work Graph.",
+      "proofSurfaces": [
+        "Atlas Profile Build",
+        "Brain Ready Setup",
+        "Directory Profiles",
+        "Integration Matrix"
+      ],
+      "status": "Spec Ready"
+    },
+    {
+      "id": "claim-provider",
+      "claim": "Show your AI work, run client audits, publish skills, and become discoverable.",
+      "proofSurfaces": [
+        "Service Provider Profile",
+        "Provider Dashboard",
+        "AI Work Graph Audit Kit",
+        "Provider Skills/How-Tos"
+      ],
+      "status": "Spec Ready"
+    }
+  ],
+  "plans": [
+    {
+      "id": "individual_essentials",
+      "name": "Individual Essentials",
+      "stage": "Help me understand my AI world",
+      "price": "TBD"
+    },
+    {
+      "id": "individual_brain_connect",
+      "name": "Individual Brain Connect",
+      "stage": "I'm really doing this",
+      "price": "TBD"
+    },
+    {
+      "id": "individual_advanced_coming_soon",
+      "name": "Individual Advanced",
+      "stage": "I have an agent team working with me",
+      "price": "Coming soon"
+    },
+    {
+      "id": "business_essentials",
+      "name": "Business Essentials",
+      "stage": "Get visibility",
+      "price": "TBD"
+    },
+    {
+      "id": "business_brain",
+      "name": "Business Brain",
+      "stage": "Add the Brain",
+      "price": "TBD"
+    },
+    {
+      "id": "business_advanced_coming_soon",
+      "name": "Business Advanced",
+      "stage": "Safely operate with agents",
+      "price": "Coming soon"
+    },
+    {
+      "id": "service_provider",
+      "name": "Service Provider",
+      "stage": "Run audits, prove work, publish skills, manage client workspaces",
+      "price": "$179/month direction"
+    }
+  ]
+}
